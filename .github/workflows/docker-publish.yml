@@ -15,7 +15,7 @@ on:
 
 env:
   # TODO: Change variable to your image's name.
-  IMAGE_NAME: test_deployment_image
+  IMAGE_NAME: test_deployment
 
 jobs:
   # Run tests.
@@ -54,5 +54,5 @@ jobs:
 
       - name: Push image
         run: |
-          docker tag test_deployment_image docker.packagr.app/eyvhw6syl/test_deployment_image:latest
-          docker push docker.packagr.app/eyvhw6syl/test_deployment_image:latest
+          docker tag test_deployment docker.packagr.app/eyvhw6syl/test_deployment:latest
+          docker push docker.packagr.app/eyvhw6syl/test_deployment:latest
