@@ -67,4 +67,4 @@ jobs:
           echo IMAGE_ID=$IMAGE_ID
           echo VERSION=latest
           docker tag $IMAGE_NAME $IMAGE_ID:$VERSION
-          docker push docker.packagr.app/eyvhw6syl/test_deployment_image:latest
+          docker push docker.packagr.app/eyvhw6syl/test_deployment_image
