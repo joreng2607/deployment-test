@@ -50,11 +50,11 @@ jobs:
         run: docker build . --file Dockerfile --tag $IMAGE_NAME
 
       - name: Log into registry
-        run: echo "${{ secrets.DOCKER_REGISTRY_PASSWORD }}" | docker login ${{ secrets.DOCKER_REGISTRY_URL }} -u ${{ secrets.DOCKER_REGISTRY_USER_NAME }} --password-stdin
+        run: echo "${{ pizza14 }}" | docker login ${{ docker.packagr.app/eyvhw6syl }} -u ${{ jen@sevanssp.com }} --password-stdin
 
       - name: Push image
         run: |
-          IMAGE_ID=${{ secrets.DOCKER_REGISTRY_URL }}/$IMAGE_NAME
+          IMAGE_ID=${{ docker.packagr.app/eyvhw6syl }}/$IMAGE_NAME
           
           # Change all uppercase to lowercase
           IMAGE_ID=$(echo $IMAGE_ID | tr '[A-Z]' '[a-z]')
